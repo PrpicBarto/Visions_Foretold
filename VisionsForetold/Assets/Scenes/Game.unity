@@ -657,6 +657,7 @@ GameObject:
   - component: {fileID: 426152758}
   - component: {fileID: 426152762}
   - component: {fileID: 426152764}
+  - component: {fileID: 426152765}
   - component: {fileID: 426152763}
   m_Layer: 0
   m_Name: Player
@@ -922,6 +923,22 @@ MonoBehaviour:
   playerRigidbody: {fileID: 426152762}
   positionComposer: {fileID: 1835896062}
   sensitivity: 2
+--- !u!114 &426152765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426152757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba9213eef7f8b3f47898b49ea02986ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  health: 100
+  maxHealth: 100
+  ragdoll: {fileID: 0}
+  isPlayer: 0
 --- !u!1 &733866859
 GameObject:
   m_ObjectHideFlags: 0
@@ -1895,7 +1912,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMovement
   agent: {fileID: 1605658881}
+  waypoints: []
+  waitingTime: 0
+  spottingDistance: 0
+  attackDistance: 0
+  attackSpeed: 0
+  damage: 0
   player: {fileID: 426152761}
+  animator: {fileID: 0}
 --- !u!195 &1605658881
 NavMeshAgent:
   m_ObjectHideFlags: 0
