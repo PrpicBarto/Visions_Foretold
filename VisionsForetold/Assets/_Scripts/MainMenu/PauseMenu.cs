@@ -26,7 +26,7 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
     }
 
-    public void Pause()
+    private void Pause()
     {
         pausePanel.SetActive(true);
         optionsPanel.SetActive(false);

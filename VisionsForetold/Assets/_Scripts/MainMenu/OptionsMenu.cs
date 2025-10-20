@@ -18,7 +18,7 @@ public class OptionsMenu : MonoBehaviour
         volumeSlider.onValueChanged.AddListener(SetVolume);
     }
 
-    public void SetVolume(float value)
+    private void SetVolume(float value)
     {
         if (AudioManager.instance == null)
         {
