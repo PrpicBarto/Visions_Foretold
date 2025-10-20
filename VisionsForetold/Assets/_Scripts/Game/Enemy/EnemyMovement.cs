@@ -22,14 +22,14 @@ public class EnemyAI : MonoBehaviour
     [Header("Target")]
     [SerializeField] private Transform player;
 
-    [Header("Animation")]
-    [SerializeField] private Animator animator;
+    //[Header("Animation")]
+    //[SerializeField] private Animator animator;
 
     private void Start()
     {
         time = waitingTime;
         SetTargetDestination(GetNextWaypoint());
-        animator.fireEvents = false;
+        //animator.fireEvents = false;
     }
 
     void FixedUpdate()
