@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace _Scripts.Game.Enemy
 {
+    //revenant - uncommon support enemy (2 verzije)
     public class Revenant : BaseEnemy
     {
         public enum RevenantType
