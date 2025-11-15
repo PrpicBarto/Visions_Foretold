@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace _Scripts.Game.Enemy
 {
-    //GHOUL - common melee enemy(3 verzije)
+    //GHOUL - common melee enemy (3 verzije)
     public class Ghoul : BaseEnemy
     {
         public enum GhoulType
